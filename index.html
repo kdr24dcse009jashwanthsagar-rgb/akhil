@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhil Ortho Mattresses &amp; Furnitures | Premium Sleep Solutions in Guntur</title>
+<meta name="description" content="Explore premium mattresses, orthopedic sleep solutions, beds and furniture from Akhil Ortho Mattresses &amp; Furnitures in Guntur. 10 Years Warranty.">
+<meta property="og:title" content="Akhil Ortho Mattresses &amp; Furnitures | Premium Sleep Solutions">
+<meta property="og:description" content="Premium mattresses, beds and furniture in Guntur, Andhra Pradesh. 10 Years Warranty on select mattresses.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛏️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="#/home" class="logo">
+        <span class="logo-main">AKHIL ORTHO</span>
+        <span class="logo-sub">MATTRESSES &amp; FURNITURES</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#/home" class="nav-link" data-path="home">Home</a>
+        <a href="#/products?category=mattresses" class="nav-link" data-path="products">Mattresses</a>
+        <a href="#/products?category=furniture" class="nav-link" data-path="products">Furniture</a>
+        <a href="#/products?category=beds" class="nav-link" data-path="products">Beds</a>
+        <a href="#/home" class="nav-link" onclick="setTimeout(()=>document.getElementById('contact-section')?.scrollIntoView({behavior:'smooth'}),50)">About</a>
+        <a href="#/home" class="nav-link" onclick="setTimeout(()=>document.querySelector('.warranty-band')?.scrollIntoView({behavior:'smooth'}),50)">Warranty</a>
+        <a href="#/home" class="nav-link" onclick="setTimeout(()=>document.getElementById('contact-section')?.scrollIntoView({behavior:'smooth'}),50)">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="search-toggle" class="icon-btn" aria-label="Search">🔍</button>
+        <button id="wishlist-btn" class="icon-btn badge-holder" aria-label="Wishlist">
+          ♡<span id="wishlist-count" class="badge">0</span>
+        </button>
+        <a href="#/cart" class="icon-btn badge-holder" aria-label="Cart">
+          🛒<span id="cart-count" class="badge">0</span>
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+
+    <div id="search-bar" class="search-bar">
+      <div class="container">
+        <input id="search-input" type="text" placeholder="Search mattresses, beds, furniture...">
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="#/home">Home</a>
+    <a href="#/products?category=mattresses">Mattresses</a>
+    <a href="#/products?category=furniture">Furniture</a>
+    <a href="#/products?category=beds">Beds</a>
+    <a href="#/cart">Cart</a>
+  </nav>
+
+  <!-- ============ APP ROOT ============ -->
+  <main id="app"></main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>AKHIL ORTHO MATTRESSES &amp; FURNITURES</h3>
+        <p>Premium Sleep Solutions</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#/home">Home</a>
+        <a href="#/products?category=mattresses">Mattresses</a>
+        <a href="#/products?category=furniture">Furniture</a>
+        <a href="#/products?category=beds">Beds</a>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <a href="tel:6300840741">Call: 6300840741</a>
+        <a href="https://wa.me/916300840741" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#/home" onclick="setTimeout(()=>document.querySelector('.warranty-band')?.scrollIntoView({behavior:'smooth'}),50)">Warranty</a>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Inner Ring Road, Guntur – 522002, Andhra Pradesh</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Akhil Ortho Mattresses &amp; Furnitures. Demo website for presentation purposes.</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING WHATSAPP ============ -->
+  <a class="whatsapp-fab" href="https://wa.me/916300840741?text=Hello%2C%20I%20am%20interested%20in%20your%20mattresses%20and%20furniture.%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20prices." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ============ PRODUCT DETAIL MODAL ============ -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ============ WISHLIST PANEL ============ -->
+  <div id="wishlist-panel" class="side-panel">
+    <div class="side-panel-head">
+      <h3>Your Wishlist</h3>
+      <button id="wishlist-close" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+    <div id="wishlist-body" class="side-panel-body"></div>
+  </div>
+
+  <!-- ============ TOASTS ============ -->
+  <div id="toast-holder" class="toast-holder"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
